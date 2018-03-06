@@ -1,0 +1,16 @@
+<h2 class="center">All Sorts of DPL Products</h2>
+
+<hr>
+<div class="row">
+  <div class="col s12 m6">
+  <button class="btn" id="toggle">Show Form</button>
+    <ul id="product-list">
+   
+      <% @products.each do |product| %>
+       <%= render partial: 'product', locals: { product: product } %>
+      <% end %>
+      </ul>
+      </div>
+      </div>
+
+          
